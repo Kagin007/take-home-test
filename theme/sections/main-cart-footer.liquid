@@ -62,6 +62,11 @@
                 <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
                   {{ 'sections.cart.checkout' | t }}
                 </button>
+                
+                <button type="submit" id="clear" class="cart__checkout-button button" name="clear"{% if cart == empty %} disabled{% endif %} form="clear">
+                  {{ 'sections.cart.clear' | t }}
+                </button>
+
               </div>
 
               {%- if additional_checkout_buttons -%}
@@ -94,6 +99,10 @@
 {% endjavascript %}
 
 <script>
+  var cartContents = fetch(window.Shopify.routes.root + 'cart/clear')
+  .then(response => response.json())
+  .then(data => { return data });
+  
   document.addEventListener('DOMContentLoaded', function() {
     function isIE() {
       const ua = window.navigator.userAgent;
@@ -110,6 +119,8 @@
     document.querySelector('#cart').appendChild(cartSubmitInput);
     document.querySelector('#checkout').addEventListener('click', function(event) {
       document.querySelector('#cart').submit();
+      {% comment %} new {% endcomment %}
+      document.querySelector('#clear').submit();
     });
   });
 </script>
