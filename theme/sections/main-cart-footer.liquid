@@ -63,7 +63,7 @@
                   {{ 'sections.cart.checkout' | t }}
                 </button>
                 
-                <button type="submit" id="clear" class="cart__checkout-button button" name="clear"{% if cart == empty %} disabled{% endif %} form="clear">
+                <button type="submit" id="clear" class="cart__checkout-button button" name="clear"{% if cart == empty %} disabled{% endif %}>
                   {{ 'sections.cart.clear' | t }}
                 </button>
 
@@ -71,6 +71,7 @@
 
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
+                  
                   {{ content_for_additional_checkout_buttons }}
                 </div>
               {%- endif -%}
@@ -99,9 +100,16 @@
 {% endjavascript %}
 
 <script>
-  var cartContents = fetch(window.Shopify.routes.root + 'cart/clear')
-  .then(response => response.json())
-  .then(data => { return data });
+  {% comment %} var cartContents = fetch(window.Shopify.routes.root + 'cart/clear')
+  .then(response => console.log('yoyo'))
+  .then(data => { return data }); {% endcomment %}
+
+  document.querySelector('#clear').addEventListener('click', function(event) {
+    fetch(window.Shopify.routes.root + 'cart/clear', {
+      method: 'POST',
+    })
+    .then(response => document.querySelector('#cart').submit());
+  })
   
   document.addEventListener('DOMContentLoaded', function() {
     function isIE() {
@@ -119,9 +127,7 @@
     document.querySelector('#cart').appendChild(cartSubmitInput);
     document.querySelector('#checkout').addEventListener('click', function(event) {
       document.querySelector('#cart').submit();
-      {% comment %} new {% endcomment %}
-      document.querySelector('#clear').submit();
-    });
+     });
   });
 </script>
 
