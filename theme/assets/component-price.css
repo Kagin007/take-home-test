@@ -18,7 +18,7 @@
   text-align: right;
 }
 
-.price .price-item {
+#price-template--14590959190105__main > div > div > div.price__sale > span.price-item.price-item--sale.price-item--last {
   margin: 0 1rem 0 0;
   color: red;
 }
