@@ -49,8 +49,8 @@
           "settings": {
           }
         },
-        "Product_Extra_Info": {
-          "type": "Product_Extra_Info",
+        "test2": {
+          "type": "test2",
           "settings": {
           }   
         },
@@ -106,7 +106,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "test",
+        "test2",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
