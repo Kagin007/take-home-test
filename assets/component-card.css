@@ -3,11 +3,9 @@
   height: 100%;
   position: relative;
   text-decoration: none;
-  /* border-style: solid; 
-  border-color: red; */
 }
 
-#Slide-template--14590959091801__featured_collection-1 {
+.product-grid .grid__item:first-child {
   color: inherit;
   height: 100%;
   position: relative;
