@@ -243,11 +243,13 @@
               </div>
             {%- endif -%}
 
-                <div>
-                  TEST2
-                  {{ product.test2 }}
-                  TEST3
-                </div>
+          {%- when 'test2' -%}
+            <div class="product__test2 rte quick-add-hidden">
+              TEST2
+              {{ product.test2 | default: "TEST!!"}}
+              {{ block.settings.content }}
+              TEST3
+            </div>
 
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
