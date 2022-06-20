@@ -52,6 +52,7 @@
         "test2": {
           "type": "test2",
           "settings": {
+            "heading": "TEST",
             "content": "This is a test"
           }
         },
