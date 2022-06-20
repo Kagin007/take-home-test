@@ -240,10 +240,10 @@
                 {{ product.description }}
               </div>
             {%- endif -%}
-            {%- when 'description' -%}
-              
+
+            {%- when 'description' -%}  
                 <div class="product__description rte quick-add-hidden">
-                  Product Extra Info TEST
+                  {{ product.description }}
                 </div>
 
           {%- when 'custom_liquid' -%}
@@ -733,16 +733,9 @@
         {
           "type": "text",
           "id": "heading",
-          "default": "Collapsible row",
           "info": "blah",
           "label": "blahblah"
-        },
-        {
-          "type": "text",
-          "label": "test",
-          "content": "testing"
-        }
-        
+        }       
       ]
     },
     {

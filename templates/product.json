@@ -52,8 +52,7 @@
         "test2": {
           "type": "test2",
           "settings": {
-            "heading": "TEST",
-            "content": "This is a test"
+            "show_dynamic_checkout": true
           }
         },
         "collapsible-row-0": {
