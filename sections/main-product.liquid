@@ -247,7 +247,7 @@
             <div class="product__test2 rte quick-add-hidden" {{ block.shopify_attributes }}>
               <details id="Details-{{ block.id }}-{{ section.id }}">
                 <summary>
-                  {{ block.settings.content }}
+                  {{ block.settings.test2 }}
                 </summary>
             </div>
 
@@ -740,7 +740,9 @@
           "type": "richtext",
           "id": "test2",
           "info": "blah",
-          "label": "Product Extra Info"
+          "label": "Product Extra Info",
+          "default": "No detailed info available",
+          "content": "Test"
         }       
       ]
     },

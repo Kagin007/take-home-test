@@ -52,8 +52,7 @@
         "test2": {
           "type": "test2",
           "settings": {
-            "show_dynamic_checkout": true,
-            "content": "This is some extra content!"
+            "content": "hi"
           }
         },
         "collapsible-row-0": {
