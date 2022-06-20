@@ -241,11 +241,11 @@
               </div>
             {%- endif -%}
             {%- when 'description' -%}
-              {%- if product.product_extra_info != blank -%}
+              
                 <div class="product__description rte quick-add-hidden">
                   Product Extra Info TEST
                 </div>
-              {%- endif -%}
+
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
@@ -724,6 +724,11 @@
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
+      "limit": 1
+    },
+    {
+      "type": "test2",
+      "name": "test2",
       "limit": 1
     },
     {

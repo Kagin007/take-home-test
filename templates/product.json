@@ -49,6 +49,11 @@
           "settings": {
           }
         },
+        "test2": {
+          "type": "test2",
+          "settings": {
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
