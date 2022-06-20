@@ -52,7 +52,7 @@
         "test2": {
           "type": "test2",
           "settings": {
-            "content": "hi"
+            "content": "yoyo"
           }
         },
         "collapsible-row-0": {
@@ -60,7 +60,7 @@
           "settings": {
             "heading": "Materials",
             "icon": "leather",
-            "content": "yoyo",
+            "content": "",
             "page": ""
           }
         },

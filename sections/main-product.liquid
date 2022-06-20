@@ -247,8 +247,9 @@
             <div class="product__test2 rte quick-add-hidden" {{ block.shopify_attributes }}>
               <details id="Details-{{ block.id }}-{{ section.id }}">
                 <summary>
-                  {{ block.settings.test2 }}
+                  {{ block.settings }}
                 </summary>
+
             </div>
 
           {%- when 'custom_liquid' -%}
@@ -741,9 +742,8 @@
           "id": "test2",
           "info": "blah",
           "label": "Product Extra Info",
-          "default": "No detailed info available",
-          "content": "Test"
-        }       
+          "default": "<p>This is default</p>"
+        }
       ]
     },
     {
