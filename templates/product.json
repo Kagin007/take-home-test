@@ -52,7 +52,7 @@
         "test2": {
           "type": "test2",
           "settings": {
-            "content": ""
+            "content": "This is a test"
           }
         },
         "collapsible-row-0": {
