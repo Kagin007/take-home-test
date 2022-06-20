@@ -238,7 +238,7 @@
             {%- if product.description != blank -%}
               <div class="product__description rte quick-add-hidden">
                 {{ product.description }}
-                TEST2
+                TEST1
                 {{ product.test2 }}
               </div>
             {%- endif -%}
@@ -247,6 +247,7 @@
                 <div class="product__description rte quick-add-hidden">
                   TEST2
                   {{ product.test2 }}
+                  TEST3
                 </div>
 
           {%- when 'custom_liquid' -%}
@@ -736,8 +737,9 @@
       "settings": [
         {
           "type": "richtext",
+          "id": "test2",
           "info": "blah",
-          "label": "blahblah"
+          "label": "Product Extra Info"
         }       
       ]
     },
