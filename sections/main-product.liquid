@@ -238,6 +238,7 @@
             {%- if product.description != blank -%}
               <div class="product__description rte quick-add-hidden">
                 {{ product.description }}
+                TEST2
                 {{ product.test2 }}
               </div>
             {%- endif -%}
@@ -731,9 +732,10 @@
     {
       "type": "test2",
       "name": "Product Extra Info",
+      "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "info": "blah",
           "label": "blahblah"
         }       
