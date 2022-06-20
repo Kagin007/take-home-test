@@ -50,7 +50,7 @@
           }
         },
         "product_extra_info": {
-          "type": "richtext",
+          "type": "product_extra_info",
           "settings": {
           }   
         },
