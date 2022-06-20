@@ -52,6 +52,7 @@
         "test2": {
           "type": "test2",
           "settings": {
+            "content": ""
           }
         },
         "collapsible-row-0": {
@@ -106,6 +107,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "test2",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
