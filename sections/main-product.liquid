@@ -244,10 +244,11 @@
             {%- endif -%}
 
           {%- when 'test2' -%}
-            <div class="product__test2 rte quick-add-hidden">
-              TEST2
-              {{ product.test2 | default: "TEST!!"}}
-              {{ block.settings.content }}
+            <div class="product__test2 rte quick-add-hidden" {{ block.shopify_attributes }}>
+              <details id="Details-{{ block.id }}-{{ section.id }}">
+                <summary>
+                  {{ block.settings }}
+                </summary>
               TEST3
             </div>
 
