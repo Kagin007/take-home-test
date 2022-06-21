@@ -53,7 +53,7 @@
           "type": "product_extra_info",
           "settings": {
             "heading": "Product Extra Info",
-            "content": "<p>test yooooo YOOOOO HI THERE THIS IS a really long extra info thing that i'm putting into the textbox so that I can format it better later!<\/p>",
+            "content": "",
             "icon": "question_mark"
           }
         },
