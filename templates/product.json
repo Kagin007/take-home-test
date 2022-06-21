@@ -52,7 +52,8 @@
         "test2": {
           "type": "test2",
           "settings": {
-            "content": "yoyo"
+            "heading": "Extra Info",
+            "content": ""
           }
         },
         "collapsible-row-0": {
