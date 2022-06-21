@@ -49,12 +49,11 @@
           "settings": {
           }
         },
-        "product_extra_info": {
-          "type": "product_extra_info",
+        "test2": {
+          "type": "test2",
           "settings": {
-            "heading": "Product Extra Info",
-            "icon": "question_mark",
-            "content": "test yooooo YOOOOO HI THERE THIS IS a really long extra info thing that i'm putting into the textbox so that I can format it better later!"
+            "heading": "Extra Info",
+            "content": ""
           }
         },
         "collapsible-row-0": {
@@ -109,7 +108,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "product_extra_info",
+        "test2",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
